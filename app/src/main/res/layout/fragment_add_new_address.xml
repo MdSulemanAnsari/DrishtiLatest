@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".VendorUser.fragment.MyProfileVendor.MyProfileTabLayout.AddNewAddress">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_gradient_home"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tvMyProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/overpass_bold"
+                android:text="ADD NEW ADDRESS"
+                android:textColor="@color/adamColor"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/backPressedAddNewAddress"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:padding="@dimen/_10sdp"
+                android:src="@drawable/backbutton"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <EditText
+            android:id="@+id/etFirstNameAddNew"
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/edit_login_bg"
+            android:hint="First Name"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/_8sdp"
+            android:singleLine="true"
+            android:textColorHint="@color/textLayout"
+            android:textSize="14dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout5" />
+        <EditText
+            android:id="@+id/etLastNameAddNew"
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/edit_login_bg"
+            android:hint="Last Name"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/_8sdp"
+            android:singleLine="true"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:textColorHint="@color/textLayout"
+            android:textSize="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout5" />
+        <EditText
+            android:id="@+id/etGst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/edit_login_bg"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:textColor="@color/adamColor"
+            android:padding="@dimen/_8sdp"
+            android:singleLine="true"
+            android:hint="GST No."
+            android:textSize="@dimen/_12sdp"
+            android:textColorHint="@color/textLayout"
+            android:layout_marginEnd="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etFirstNameAddNew" />
+        <EditText
+            android:id="@+id/etAddressAddNew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/edit_login_bg"
+            android:hint="Enter Your Address"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/_8sdp"
+            android:singleLine="true"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:textColorHint="@color/textLayout"
+            android:textSize="14dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etGst"/>
+        <EditText
+            android:id="@+id/etCity"
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/edit_login_bg"
+            android:hint="City"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/_8sdp"
+            android:singleLine="true"
+            android:textColorHint="@color/textLayout"
+            android:textSize="14dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etAddressAddNew" />
+        <Spinner
+            android:id="@+id/spinnerStateAddNew"
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/edit_login_bg"
+            android:imeOptions="actionNext"
+            android:padding="@dimen/_6sdp"
+            android:entries="@array/state_Add"
+            android:dropDownVerticalOffset="@dimen/_36sdp"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etAddressAddNew" />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageSpinnerOct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_drop_drown"
+            android:layout_marginEnd="@dimen/_8sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/spinnerStateAddNew"
+            app:layout_constraintEnd_toEndOf="@+id/spinnerStateAddNew"
+            app:layout_constraintTop_toTopOf="@+id/spinnerStateAddNew" />
+        <EditText
+            android:id="@+id/etPostalCode"
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/edit_login_bg"
+            android:hint="Postal Code"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/_8sdp"
+            android:singleLine="true"
+            android:textColorHint="@color/textLayout"
+            android:textSize="14dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etCity" />
+
+        <Spinner
+            android:id="@+id/SpinnerCountryAddNew"
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/edit_login_bg"
+            android:imeOptions="actionNext"
+            android:padding="@dimen/_6sdp"
+            android:entries="@array/country_Add"
+            android:dropDownVerticalOffset="@dimen/_36sdp"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerStateAddNew" />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageSpinnerCountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_drop_drown"
+            android:layout_marginEnd="@dimen/_8sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/SpinnerCountryAddNew"
+            app:layout_constraintEnd_toEndOf="@+id/SpinnerCountryAddNew"
+            app:layout_constraintTop_toTopOf="@+id/SpinnerCountryAddNew" />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/checkBoxBillingAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_20sdp"
+            android:buttonTint="@color/adamColor"
+            android:text="Use as my default billing address"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etPostalCode" />
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/checkBoxShippingAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_20sdp"
+            android:buttonTint="@color/adamColor"
+            android:text="Use as my default Shipping address"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxBillingAddress" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonSubmitAddNew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_60sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:backgroundTint="@color/layoutNewColor"
+            android:fontFamily="@font/overpass_bold"
+            android:padding="@dimen/_10sdp"
+            app:backgroundTint="@null"
+            android:background="@drawable/button_bg"
+            android:text="SUBMIT"
+            android:textColor="@color/adamColor"
+            android:textSize="16dp"
+            app:cornerRadius="8dp"
+            android:layout_marginBottom="@dimen/_12sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

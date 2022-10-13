@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.fragment.EditProfile">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_gradient_home"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tvMyProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/overpass_bold"
+                android:text="EDIT PROFILE"
+                android:textColor="@color/adamColor"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/backPressedEditProfile"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:padding="@dimen/_10sdp"
+                android:src="@drawable/backbutton"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileEditPic"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:src="@drawable/profile_pic_3x"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout5"/>
+        <TextView
+            android:id="@+id/updateProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update Profile picture"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:textColor="@color/adamColor"
+            android:textSize="@dimen/_12sdp"
+            android:fontFamily="@font/overpass_regular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profileEditPic" />
+
+        <EditText
+            android:id="@+id/etFirstName"
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/edit_login_bg"
+            android:hint="Adam"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/_8sdp"
+            android:singleLine="true"
+            android:textColorHint="@color/adamColor"
+            android:textSize="14dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/updateProfile" />
+        <EditText
+            android:id="@+id/etLastName"
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/edit_login_bg"
+            android:hint="Smit"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/_8sdp"
+            android:singleLine="true"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:textColorHint="@color/adamColor"
+            android:textSize="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/updateProfile" />
+        <TextView
+            android:id="@+id/tvEditProfileEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/edit_login_bg"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:text="email"
+            android:textColor="@color/adamColor"
+            android:padding="@dimen/_8sdp"
+            android:singleLine="true"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:textColorHint="@color/adamColor"
+            android:textSize="14dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etFirstName" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:background="@drawable/edit_login_bg"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvEditProfileEmail">
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/countryCCP"
+                android:layout_width="wrap_content"
+                android:imeOptions="actionNext"
+                android:layout_height="wrap_content"
+                app:ccpDialog_keyboardAutoPopup="false"
+                app:ccp_defaultNameCode="IN"/>
+            <EditText
+                android:id="@+id/etPhoneProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="phone"
+                android:textSize="@dimen/_12sdp"
+                android:paddingTop="@dimen/_6sdp"
+                android:nextFocusForward="@+id/datePicker"
+                android:imeOptions="actionNext"
+                android:backgroundTint="@color/white"
+                android:inputType="phone"
+                android:singleLine="true" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <TextView
+            android:id="@+id/datePicker"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:imeOptions="actionNext"
+            android:background="@drawable/edit_login_bg"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:textColor="@color/adamColor"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingTop="@dimen/_4sdp"
+            android:textColorHint="@color/adamColor"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:fontFamily="@font/overpass_bold"
+            android:text="Address"
+            android:layout_marginStart="@dimen/_11sdp"
+            android:textColor="@color/adamColor"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/datePicker" />
+        <EditText
+            android:id="@+id/etAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/edit_login_bg"
+            android:hint="Enter Your Address"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/_8sdp"
+            android:singleLine="true"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:textColorHint="@color/adamColor"
+            android:textSize="14dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/address"/>
+        <Spinner
+            android:id="@+id/spinnerCities"
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/edit_login_bg"
+            android:imeOptions="actionNext"
+            android:padding="@dimen/_8sdp"
+            android:overlapAnchor="true"
+            android:spinnerMode="dialog"
+            android:dropDownVerticalOffset="-200dp"
+            android:textColorHint="@color/adamColor"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etAddress"/>
+
+        <Spinner
+            android:id="@+id/spinnerState"
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/edit_login_bg"
+            android:imeOptions="actionNext"
+            android:padding="@dimen/_8sdp"
+            android:overlapAnchor="true"
+            android:spinnerMode="dialog"
+            android:dropDownVerticalOffset="-200dp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etAddress" />
+
+        <EditText
+            android:id="@+id/etPinCode"
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/edit_login_bg"
+            android:imeOptions="actionNext"
+            android:padding="@dimen/_8sdp"
+            android:hint="140071"
+            android:singleLine="true"
+            android:textColorHint="@color/adamColor"
+            android:overlapAnchor="true"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerCities" />
+
+        <EditText
+            android:id="@+id/etcountry"
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/edit_login_bg"
+            android:hint="India"
+            android:imeOptions="actionDone"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/_8sdp"
+            android:singleLine="true"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:textColorHint="@color/adamColor"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerState" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonUpdateProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_60sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:backgroundTint="@color/layoutNewColor"
+            android:fontFamily="@font/overpass_bold"
+            android:padding="@dimen/_10sdp"
+            app:backgroundTint="@null"
+            android:background="@drawable/button_bg"
+            android:text="UPDATE"
+            android:textColor="@color/adamColor"
+            android:textSize="16dp"
+            app:cornerRadius="8dp"
+            android:layout_marginBottom="@dimen/_12sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etPinCode" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>

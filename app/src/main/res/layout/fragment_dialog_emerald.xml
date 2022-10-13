@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.fragment.DialogEmerald"
+        android:background="@drawable/edit_login_bg">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/crossDialogPic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/cross_dialog"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/overpass_regular"
+            android:gravity="center"
+            android:text="Are you sure you want to mark this\n product as sold?"
+            android:textColor="@color/adamColor"
+            android:textSize="@dimen/_13sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/crossDialogPic" />
+
+        <TextView
+            android:id="@+id/tvDataDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:fontFamily="@font/overpass_bold"
+            android:text="EMERALD-8.68 CARAT"
+            android:textColor="@color/adamColor"
+            android:textSize="@dimen/_15sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/message" />
+        <TextView
+            android:id="@+id/tvDataDialogDollar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/overpass_bold"
+            android:text="$100 "
+            android:layout_marginStart="@dimen/_110sdp"
+            android:textColor="@color/stokDollar"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDataDialog" />
+        <TextView
+            android:id="@+id/messageDollor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/overpass_regular"
+            android:text="($100/ CARAT)"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:textColor="@color/adamColor"
+            android:textSize="@dimen/_11sdp"
+            app:layout_constraintStart_toEndOf="@+id/tvDataDialogDollar"
+            app:layout_constraintTop_toBottomOf="@+id/tvDataDialog" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonSubmitDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:backgroundTint="@color/layoutNewColor"
+            android:fontFamily="@font/overpass_bold"
+            android:padding="@dimen/_4sdp"
+            android:text="SUBMIT"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:textColor="@color/adamColor"
+            android:textSize="15dp"
+            app:cornerRadius="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDataDialogDollar" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

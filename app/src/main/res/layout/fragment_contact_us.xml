@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bacground_image"
+        tools:context=".VendorUser.fragment.Settings.ContactUs">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_gradient_home"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/changePassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/overpass_bold"
+                android:text="CONTACT US"
+                android:textColor="@color/adamColor"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/backPressedCu"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:padding="@dimen/_10sdp"
+                android:src="@drawable/backbutton"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/textMessageContactUs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/overpass_bold"
+            android:text="Feel free to ask any queries, we'll respond you back\nas soon as possible."
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:textColor="@color/adamColor"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout5" />
+        <EditText
+            android:id="@+id/etNameContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:background="@drawable/edit_login_bg"
+            android:hint="Name"
+            android:textColorHint="@color/backgroundDataSHowColor"
+            android:padding="10dp"
+            android:textSize="14dp"
+            android:singleLine="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textMessageContactUs" />
+
+        <EditText
+            android:id="@+id/etEmailContactUs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:inputType="textEmailAddress"
+            android:imeOptions="actionNext"
+            android:background="@drawable/edit_login_bg"
+            android:hint="Email"
+            android:textColorHint="@color/backgroundDataSHowColor"
+            android:padding="10dp"
+            android:textSize="14dp"
+            android:singleLine="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etNameContact"/>
+        <EditText
+            android:id="@+id/etSubjectContactUs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:background="@drawable/edit_login_bg"
+            android:hint="Subject"
+            android:textColorHint="@color/backgroundDataSHowColor"
+            android:padding="10dp"
+            android:textSize="14dp"
+            android:singleLine="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etEmailContactUs"/>
+        <EditText
+            android:id="@+id/etMessageContactUs"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_66sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:inputType="text"
+            android:imeOptions="actionDone"
+            android:background="@drawable/edit_login_bg"
+            android:hint="Message"
+            android:textColorHint="@color/backgroundDataSHowColor"
+            android:paddingTop="10dp"
+            android:paddingStart="@dimen/_10sdp"
+            android:gravity="start"
+            android:textSize="14dp"
+            android:singleLine="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etSubjectContactUs"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonSubmitCu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:padding="@dimen/_10sdp"
+            android:text="SUBMIT"
+            app:backgroundTint="@null"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/overpass_bold"
+            android:textColor="@color/adamColor"
+            android:textSize="16dp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            app:layout_constraintTop_toBottomOf="@+id/etMessageContactUs"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+        <View
+            android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@color/viewColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonSubmitCu" />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageAddress"
+            android:layout_width="@dimen/_56sdp"
+            android:layout_height="@dimen/_56sdp"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/address_pic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/overpass_regular"
+            android:text="E-23,Second floor,IT Tower,Industrial\nArea,Sector 74,sahibzada Ajit Singh\nNagar,Punjab 160023,India"
+            android:textColor="@color/adamColor"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageAddress"
+            app:layout_constraintStart_toEndOf="@+id/imageAddress"
+            app:layout_constraintTop_toTopOf="@+id/imageAddress" />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imagePN"
+            android:layout_width="@dimen/_56sdp"
+            android:layout_height="@dimen/_56sdp"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/phone_pic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageAddress" />
+
+        <TextView
+            android:id="@+id/pnMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/overpass_bold"
+            android:text="Phone Number"
+            android:textColor="@color/adamColor"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintStart_toEndOf="@+id/imagePN"
+            app:layout_constraintTop_toTopOf="@+id/imagePN" />
+        <TextView
+            android:id="@+id/tvPhoneNumberCu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/overpass_regular"
+            android:text="+91 9865324564"
+            android:textColor="@color/adamColor"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintStart_toStartOf="@+id/pnMsg"
+            app:layout_constraintTop_toBottomOf="@+id/pnMsg" />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageEmail"
+            android:layout_width="@dimen/_56sdp"
+            android:layout_height="@dimen/_56sdp"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/email_pic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imagePN" />
+
+        <TextView
+            android:id="@+id/emMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/overpass_bold"
+            android:text="Email Address"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textColor="@color/adamColor"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintStart_toEndOf="@+id/imageEmail"
+            app:layout_constraintTop_toTopOf="@+id/imageEmail" />
+        <TextView
+            android:id="@+id/tvEmailCu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/overpass_regular"
+            android:text="support@drishtigems.com"
+            android:textColor="@color/adamColor"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintStart_toStartOf="@+id/emMsg"
+            app:layout_constraintTop_toBottomOf="@+id/emMsg" />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageSupport"
+            android:layout_width="@dimen/_56sdp"
+            android:layout_height="@dimen/_56sdp"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/support_pic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageEmail" />
+        <TextView
+            android:id="@+id/support"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/overpass_bold"
+            android:text="Support"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textColor="@color/adamColor"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintStart_toEndOf="@+id/imageSupport"
+            app:layout_constraintTop_toTopOf="@+id/imageSupport" />
+        <TextView
+            android:id="@+id/tvSupport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/overpass_regular"
+            android:text="Monday-Sunday(9:30am-11:30pm IST)"
+            android:textColor="@color/adamColor"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintStart_toStartOf="@+id/support"
+            app:layout_constraintTop_toBottomOf="@+id/support" />
+
+        <TextView
+            android:id="@+id/sales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/overpass_bold"
+            android:text="Sales"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:textColor="@color/adamColor"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintStart_toStartOf="@+id/tvSupport"
+            app:layout_constraintTop_toBottomOf="@+id/support" />
+
+        <TextView
+            android:id="@+id/tvSales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/overpass_regular"
+            android:text="Monday-Sunday(9:30am-6:30pm IST)"
+            android:textColor="@color/adamColor"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/sales"
+            app:layout_constraintTop_toBottomOf="@+id/sales" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
+</layout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".VendorUser.fragment.GemstoneHome.HomeGemstones.ChoosePayment">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/crossDialogPayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/cross_dialog"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvChoosePayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/overpass_bold"
+            android:text="Choose Payment Option"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:textColor="@color/adamColor"
+            android:textSize="@dimen/_13sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/crossDialogPayment" />
+<RadioGroup
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/radioButton"
+    android:layout_marginStart="@dimen/_20sdp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tvChoosePayment">
+    <androidx.appcompat.widget.AppCompatRadioButton
+        android:id="@+id/btnRadio1"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_20sdp"
+        android:buttonTint="@color/adamColor"
+        android:fontFamily="@font/overpass_bold"
+        android:text="Online Payment"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textColor="@color/adamColor"
+        android:textSize="@dimen/_12sdp"
+        android:checked="false" />
+    <androidx.appcompat.widget.AppCompatRadioButton
+        android:id="@+id/btnRadio2"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_20sdp"
+        android:buttonTint="@color/adamColor"
+        android:fontFamily="@font/overpass_bold"
+        android:text="Cash On Delivery"
+        android:checked="false"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:textColor="@color/adamColor"
+        android:textSize="@dimen/_12sdp" />
+</RadioGroup>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonSubmitDialogPayment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+           android:backgroundTint="@null"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/overpass_bold"
+            android:text="SUBMIT"
+            android:layout_marginBottom="@dimen/_24sdp"
+            android:textColor="@color/adamColor"
+            android:textSize="16dp"
+            app:cornerRadius="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

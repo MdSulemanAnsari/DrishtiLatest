@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/bottom_seat"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="13dp">
+
+            <TextView
+                android:id="@+id/tvEmeraldNameVendorSp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/overpass_bold"
+                android:text="EMERALD-8.68 CARATS"
+                android:textColor="@color/adamColor"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintStart_toEndOf="@+id/imageStockVendorSp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvSku"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:fontFamily="@font/overpass_bold"
+                android:text="SKU: "
+                android:textColor="@color/adamColor"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintStart_toEndOf="@+id/imageStockVendorSp"
+                app:layout_constraintTop_toBottomOf="@+id/tvEmeraldNameVendorSp" />
+
+            <TextView
+                android:id="@+id/tvSkuValueVendorSp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/overpass_regular"
+                android:text="GP-35487"
+                android:textColor="@color/adamColor"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintStart_toEndOf="@+id/tvSku"
+                app:layout_constraintTop_toTopOf="@+id/tvSku" />
+
+            <TextView
+                android:id="@+id/tvOrigin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:fontFamily="@font/overpass_bold"
+                android:text="Origin: "
+                android:textColor="@color/adamColor"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintStart_toEndOf="@+id/imageStockVendorSp"
+                app:layout_constraintTop_toBottomOf="@+id/tvSku" />
+
+            <TextView
+                android:id="@+id/tvOriginValueVendor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/overpass_regular"
+                android:text="Zambia"
+                android:textColor="@color/adamColor"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintStart_toEndOf="@+id/tvOrigin"
+                app:layout_constraintTop_toBottomOf="@+id/tvSkuValueVendorSp" />
+
+            <TextView
+                android:id="@+id/tvCaratDollarVendorSp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:fontFamily="@font/overpass_bold"
+                android:text="$100/ CARAT: "
+                android:textColor="@color/stokDollar"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tvSku"
+                app:layout_constraintTop_toBottomOf="@+id/tvOrigin" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageStockVendorSp"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:src="@drawable/stock_pic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/bg_heart"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginEnd="@dimen/_4sdp"
+                android:padding="@dimen/_10sdp"
+                android:src="@drawable/bg_heart"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageHeartSoldBtn"
+                android:layout_width="@dimen/_36sdp"
+                android:layout_height="@dimen/_36sdp"
+                android:layout_marginEnd="8dp"
+                android:padding="@dimen/_10sdp"
+                android:src="@drawable/bg_heart_shadow"
+                app:layout_constraintBottom_toBottomOf="@+id/bg_heart"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/bg_play"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginEnd="@dimen/_4sdp"
+                android:padding="@dimen/_10sdp"
+                android:src="@drawable/bg_play"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bg_heart" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/playIconSP"
+                android:layout_width="@dimen/_36sdp"
+                android:layout_height="@dimen/_36sdp"
+                android:padding="@dimen/_10sdp"
+                android:src="@drawable/play_pic"
+                app:layout_constraintBottom_toBottomOf="@+id/bg_play"
+                app:layout_constraintEnd_toEndOf="@+id/bg_play"
+                app:layout_constraintStart_toStartOf="@+id/bg_play"
+                app:layout_constraintTop_toTopOf="@+id/bg_play" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

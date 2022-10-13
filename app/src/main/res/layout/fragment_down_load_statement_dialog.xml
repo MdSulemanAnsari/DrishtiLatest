@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".VendorUser.fragment.ProfitGraph.DownLoadStatementDialog">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/crossDs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/cross_dialog"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textDS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/overpass_bold"
+            android:text="Download Statement"
+            android:textColor="@color/adamColor"
+            android:textSize="@dimen/_13sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/crossDs" />
+        <TextView
+            android:id="@+id/textCurrentMonth"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/edit_login_bg"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:textColor="@color/adamColor"
+            android:text="Current Month (1 Sep-17 Sep)"
+            android:gravity="start"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingTop="@dimen/_6sdp"
+            android:fontFamily="@font/overpass_regular"
+            android:textColorHint="@color/textLayout"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textDS" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/appCompatImageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_drop_drown"
+            android:layout_marginEnd="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/textCurrentMonth"
+            app:layout_constraintEnd_toEndOf="@+id/textCurrentMonth"
+            app:layout_constraintTop_toTopOf="@+id/textCurrentMonth" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintDate"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textCurrentMonth">
+
+            <TextView
+                android:id="@+id/datePickerFrom"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@drawable/edit_login_bg"
+                android:imeOptions="actionNext"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingTop="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textColor="@color/adamColor"
+                android:textColorHint="@color/textLayout"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:src="@drawable/icon_calendar3x"
+                app:layout_constraintBottom_toBottomOf="@+id/datePickerFrom"
+                app:layout_constraintEnd_toEndOf="@+id/datePickerFrom"
+                app:layout_constraintTop_toTopOf="@+id/datePickerFrom" />
+
+            <TextView
+                android:id="@+id/datePickerTo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/edit_login_bg"
+                android:imeOptions="actionNext"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingTop="@dimen/_4sdp"
+                android:textColor="@color/adamColor"
+                android:textColorHint="@color/textLayout"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/datePickerFrom" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:src="@drawable/icon_calendar3x"
+                app:layout_constraintBottom_toBottomOf="@+id/datePickerTo"
+                app:layout_constraintEnd_toEndOf="@+id/datePickerTo"
+                app:layout_constraintTop_toTopOf="@+id/datePickerTo" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonSubmitDs"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:background="@drawable/button_bg"
+            android:backgroundTint="@null"
+            android:fontFamily="@font/overpass_bold"
+            android:text="SUBMIT"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:textColor="@color/adamColor"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintDate" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

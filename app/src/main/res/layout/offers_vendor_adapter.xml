@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+           android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/offer_pic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageOfferVendor"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_130sdp"
+                android:background="@drawable/bg_offer_vendor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/tvVendorOffer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:fontFamily="@font/overpass_bold"
+                android:gravity="center"
+                android:text="SIGN IN TODAY TO GET 10%\n\nDISCOUNT ON ALL PRODUCTS."
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="@+id/imageOfferVendor"
+                app:layout_constraintStart_toStartOf="@+id/imageOfferVendor"
+                app:layout_constraintTop_toTopOf="@+id/imageOfferVendor" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonShowCode"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:backgroundTint="@null"
+                android:background="@drawable/button_bg"
+                android:fontFamily="@font/overpass_bold"
+                android:text="SHOW CODE"
+                android:textColor="@color/adamColor"
+                android:textSize="12dp"
+                app:cornerRadius="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/imageOfferVendor"
+                app:layout_constraintTop_toBottomOf="@+id/tvVendorOffer" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

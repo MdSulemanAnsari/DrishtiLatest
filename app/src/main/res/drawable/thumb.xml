@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:width="@dimen/_70sdp"
+        android:height="@dimen/_30sdp"
+        android:top="@dimen/_5sdp"
+        android:start="@dimen/_minus49sdp"
+        android:bottom="@dimen/_35sdp"
+        android:end="0dp"
+        android:drawable="@drawable/thum_images"/>
+</layer-list>

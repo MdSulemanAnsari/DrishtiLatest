@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_constraint"
+        tools:context=".VendorUser.fragment.PurchaseHistory.PurchaseHistoryTablayout.DeliveryStatusBottomSheet">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/overpass_bold"
+            android:text="Delivery Status"
+            android:textColor="@color/adamColor"
+            android:textSize="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/crossViewDelivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cross"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@color/viewColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        <TextView
+            android:id="@+id/tvDeliveryMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/overpass_regular"
+            android:text="Expected Delivery Date:"
+            android:textColor="@color/adamColor"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view2" />
+        <TextView
+            android:id="@+id/tvDeliveryDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:fontFamily="@font/overpass_regular"
+            android:text="22 Sep,2021"
+            android:textColor="@color/adamColor"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintStart_toEndOf="@+id/tvDeliveryMessage"
+            app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/roundedDeliveryStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ecllips_rounded"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDeliveryMessage" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/signPic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sign_pic"
+            app:layout_constraintBottom_toBottomOf="@+id/roundedDeliveryStatus"
+            app:layout_constraintEnd_toEndOf="@+id/roundedDeliveryStatus"
+            app:layout_constraintStart_toStartOf="@+id/roundedDeliveryStatus"
+            app:layout_constraintTop_toTopOf="@+id/roundedDeliveryStatus" />
+
+        <TextView
+            android:id="@+id/tvConfirmStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:fontFamily="@font/overpass_bold"
+            android:text="Confirmed"
+            android:textColor="@color/adamColor"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintStart_toEndOf="@+id/roundedDeliveryStatus"
+            app:layout_constraintTop_toBottomOf="@+id/tvDeliveryMessage" />
+        <TextView
+            android:id="@+id/tvConfirmDateStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:fontFamily="@font/overpass_regular"
+            android:text="17/09/2021"
+            android:textColor="@color/adamColor"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintStart_toEndOf="@+id/roundedDeliveryStatus"
+            app:layout_constraintTop_toBottomOf="@+id/tvConfirmStatus" />
+        <TextView
+            android:id="@+id/tvConfirmTimeStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:fontFamily="@font/overpass_regular"
+            android:text="10:00 AM"
+            android:textColor="@color/adamColor"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintStart_toEndOf="@+id/tvConfirmDateStatus"
+            app:layout_constraintTop_toBottomOf="@+id/tvConfirmStatus" />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line"
+            android:layout_marginStart="@dimen/_18sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/roundedDeliveryStatus" />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/roundShadow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/round_pic_shadow"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/roundedDeliveryStatus" />
+
+        <TextView
+            android:id="@+id/tvPacked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:fontFamily="@font/overpass_bold"
+            android:text="Packed"
+            android:textColor="@color/backgroundDataSHowColor"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/roundShadow1"
+            app:layout_constraintStart_toEndOf="@+id/roundShadow1"
+            app:layout_constraintTop_toTopOf="@+id/roundShadow1" />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/roundShadow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/round_pic_shadow"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/roundShadow1" />
+
+        <TextView
+            android:id="@+id/tvShipped"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:fontFamily="@font/overpass_bold"
+            android:text="Shipped"
+            android:textColor="@color/backgroundDataSHowColor"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/roundShadow2"
+            app:layout_constraintStart_toEndOf="@+id/roundShadow2"
+            app:layout_constraintTop_toTopOf="@+id/roundShadow2" />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/roundShadow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/round_pic_shadow"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/roundShadow2" />
+
+        <TextView
+            android:id="@+id/tvOnTheWay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:fontFamily="@font/overpass_bold"
+            android:text="On the way"
+            android:textColor="@color/backgroundDataSHowColor"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/roundShadow3"
+            app:layout_constraintStart_toEndOf="@+id/roundShadow3"
+            app:layout_constraintTop_toTopOf="@+id/roundShadow3" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/roundShadow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:src="@drawable/round_pic_shadow"
+            android:layout_marginBottom="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/roundShadow3" />
+
+        <TextView
+            android:id="@+id/tvDelivered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:fontFamily="@font/overpass_bold"
+            android:text="Delivered"
+            android:textColor="@color/backgroundDataSHowColor"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/roundShadow4"
+            app:layout_constraintStart_toEndOf="@+id/roundShadow4"
+            app:layout_constraintTop_toTopOf="@+id/roundShadow4" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

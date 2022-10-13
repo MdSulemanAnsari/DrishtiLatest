@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".VendorUser.fragment.PurchaseHistory.PurchaseHistoryTablayout.MyPurchase">
+        <TextView
+            android:id="@+id/tvProductMyPurchase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/overpass_bold"
+            android:text="4 Products"
+            android:layout_margin="@dimen/_10sdp"
+            android:textColor="@color/adamColor"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinnerSoldPurchase"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:background="@drawable/bg_spinner"
+            android:entries="@array/stock_list"
+            android:dropDownVerticalOffset="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/overpass_regular"
+            android:text="View By:"
+            android:layout_marginEnd="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:textColor="@color/adamColor"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintEnd_toStartOf="@+id/spinnerSoldPurchase"
+            app:layout_constraintTop_toTopOf="@+id/spinnerSoldPurchase" />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/appCompatImageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_4sdp"
+            android:src="@drawable/ic_drop_drown"
+            app:layout_constraintBottom_toBottomOf="@+id/spinnerSoldPurchase"
+            app:layout_constraintEnd_toEndOf="@+id/spinnerSoldPurchase"
+            app:layout_constraintTop_toTopOf="@+id/spinnerSoldPurchase" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvMyPurchase"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvProductMyPurchase" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,100 @@
+<resources>
+    <string name="app_name">DrishtiGems</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="viewAllText"><a href="">View All</a></string>
+    <string name="moreInfoText"><a href="">More info</a></string>
+    <string name="lessInfoText"><a href="">Less info</a></string>
+    <string name="agrCertified"><a href="">AGR Certified</a></string>
+    <string name="viewCertification"><a href="">View Certification</a></string>
+    <string name="moreBenifitt"><a href="">Check Information And Benefit</a></string>
+    <string name="select_logout">Do you want to Logout</string>
+    <string name="textView6">"9 days" left to achieve your target amount.</string>
+    <string name="checkMoreInfo"><a href="">Check more info and benefits</a></string>
+    <string name="action_settings">Settings</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="time">T: </string>
+    <string name="time_set">Set time</string>
+    <string name="_0">0k</string>
+    <string name="_10000">100k</string>
+    <string-array name="stock_list">
+        <item>All</item>
+        <item>Sold</item>
+        <item>UnSold</item>
+    </string-array>
+    <string-array name="filter_emerald_list">
+        <item>Natural Emerald</item>
+        <item>Emerald</item>
+        <item>Gold Emerald</item>
+    </string-array>
+
+    <string-array name="distributor_list">
+        <item>District Distributor</item>
+        <item>Jharkhand</item>
+        <item>Punjab</item>
+    </string-array>
+    <string-array name="filter_sort_list">
+        <item>Price-Low to high</item>
+        <item>100</item>
+        <item>1000</item>
+        <item>2000</item>
+    </string-array>
+    <string-array name="ct_prize_offer">
+        <item>0.10ct</item>
+        <item>0.20ct</item>
+        <item>1.21ct</item>
+    </string-array>
+    <string-array name="carat_spinner">
+        <item>Carat</item>
+        <item>Carat</item>
+        <item>Carat</item>
+    </string-array>
+    <string-array name="quantity_spinner">
+        <item>Select</item>
+        <item>select</item>
+        <item>Select</item>
+    </string-array>
+    <string-array name="quality_spinner">
+        <item>Select</item>
+        <item>select</item>
+        <item>Select</item>
+    </string-array>
+    <string-array name="state_Add">
+        <item>Select</item>
+        <item>Jharkhand</item>
+        <item>Punjab</item>
+    </string-array>
+    <string-array name="country_Add">
+        <item>Country</item>
+        <item>India</item>
+        <item>India</item>
+        <item>India</item>
+    </string-array>
+    <string-array name="add_Jewellery_list">
+        <item>Add a Jewellery</item>
+        <item>Jewellery</item>
+        <item>Jewellery</item>
+    </string-array>
+    <string-array name="ring_list">
+        <item>Ring</item>
+        <item>Ring</item>
+        <item>Ring</item>
+    </string-array>
+    <string-array name="yellow_list">
+        <item>22k Yellow Gold</item>
+        <item>Yellow Gold</item>
+        <item>Yellow Gold</item>
+    </string-array>
+    <string-array name="ring_size_system">
+        <item>Indian Ring Size System</item>
+        <item>ring System</item>
+        <item>ring System</item>
+    </string-array>
+    <string-array name="ring_size">
+        <item>Please Select</item>
+        <item>10</item>
+        <item>20</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/amountcolor"
+        tools:context=".ConnectionFragment">
+        <RelativeLayout
+            android:id="@+id/noInternetLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:id="@+id/noInternetHeading"
+                android:layout_height="@dimen/_200sdp"
+                android:layout_marginTop="@dimen/_90sdp"
+                android:src="@drawable/internet_connection"/>
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/noInternetHeading"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:fontFamily="@font/overpass_bold"
+                android:text="No Internet Connection"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/overpass_regular"
+                android:text="Check Your Internet Connection And Try Again"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/tryAgainButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text2"
+                android:backgroundTint="@color/black"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Try Again" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>
